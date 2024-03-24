@@ -13,7 +13,7 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew :shadowJar
       - name: Update lambda
-        uses: asafmaoz1234/aws-lambda-update-jar-action@v1
+        uses: asafmaoz1234/aws-lambda-update-jar-action@1.1
         with:
           lambda-name: service1
           snapshot-name: service1-1.0-SNAPSHOT-all.jar

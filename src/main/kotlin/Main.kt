@@ -14,7 +14,7 @@ class Handler : RequestHandler<APIGatewayV2HTTPEvent, APIGatewayV2HTTPResponse> 
         return APIGatewayV2HTTPResponse().apply {
             statusCode = 200
             headers = mapOf("Content-Type" to "application/json")
-            body = "hello all"
+            body = "hello all again"
         }
     }
 }

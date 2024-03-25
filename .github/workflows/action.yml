@@ -12,11 +12,11 @@ jobs:
         uses: gradle/gradle-build-action@v3
       - name: Build with Gradle
         run: ./gradlew :shadowJar
-      - name: Update lambda
-        uses: asafmaoz1234/aws-lambda-update-jar-action@1.1
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
         with:
-          lambda-name: service1
-          snapshot-name: service1-1.0-SNAPSHOT-all.jar
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_DEFAULT_REGION: ${{ secrets.AWS_REGION }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+      - name: Deploy on AWS
+        run: aws lambda update-function-code --function-name service1 --zip-file "fileb://./service1-1.0-SNAPSHOT-all.jar"

@@ -20,5 +20,5 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
       - name: Deploy on AWS
         run: |
-          ls -l
-          aws lambda update-function-code --function-name service1 --zip-file "fileb://./service1-1.0-SNAPSHOT-all.jar"
+          ls -l ./build
+          aws lambda update-function-code --function-name service1 --zip-file "fileb://./build/service1-1.0-SNAPSHOT-all.jar"

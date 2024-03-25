@@ -19,4 +19,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
       - name: Deploy on AWS
-        run: aws lambda update-function-code --function-name service1 --zip-file "fileb://./service1-1.0-SNAPSHOT-all.jar"
+        run: |
+          ls -l
+          aws lambda update-function-code --function-name service1 --zip-file "fileb://./service1-1.0-SNAPSHOT-all.jar"

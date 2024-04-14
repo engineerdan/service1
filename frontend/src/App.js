@@ -17,7 +17,7 @@ function App() {
         >
           Learn React
         </a>
-        <button onClick={() => sendEvent("https://bbc.co.uk")}>Send event</button>
+        <button onClick={() => sendEvent("https://bbc.co.uk")}>Send event!</button>
         </header>
     </div>
   );

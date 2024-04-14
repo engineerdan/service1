@@ -32,4 +32,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Deploy
-        run: ./scripts/amplify-deploy.sh frontend master
+        run: ./scripts/amplify-deploy.sh db6n4xmnpgppq master

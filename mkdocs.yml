@@ -1,0 +1,7 @@
+site_name: mapper
+repo_url: https://github.com/squidfunk/mkdocs-material
+repo_name: mappertec/mapper
+theme:
+  name: material
+  palette:
+    primary: black

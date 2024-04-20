@@ -11,7 +11,7 @@ When we develop locally we utilise IntelliJ file watchers and the AWS CLI to do 
 
 ## Automatically Push Updated Lambda Functions on Save
 
-When a developer is happy that.
+When a developer is happy that they have everything working in their own     
 
 # Documentation
 

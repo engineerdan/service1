@@ -44,6 +44,7 @@ resource "aws_s3_bucket_policy" "public_read_policy" {
 }
 
 # create cloudfront distribution which redirects http to https
+/*
 resource "aws_cloudfront_distribution" "distribution" {
   enabled         = true
   is_ipv6_enabled = true
@@ -83,4 +84,4 @@ resource "aws_cloudfront_distribution" "distribution" {
     cached_methods         = ["GET", "HEAD"]
     target_origin_id       = aws_s3_bucket.mapper-frontend.bucket_regional_domain_name
   }
-}
+} */

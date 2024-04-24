@@ -7,6 +7,8 @@ When we develop locally we utilise IntelliJ file watchers and the AWS CLI to do 
 - sync the front end files with S3 automatically on save
 - automatically push lambda functions on save
 
+We use Terraform to manage our infrastructure and build the dev, test and prod environments.  We try to ensure the differences between the environments are minimised.
+
 ## Sync Front End Files with S3 on Save
 
 ## Automatically Push Updated Lambda Functions on Save
@@ -20,4 +22,6 @@ We used Material for MKDocs to manage our documentation which is stored in the `
 # Repository Structure
 
 # Pipelines
+
+Our aim is to practice continuous integration and delivery.
 

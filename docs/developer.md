@@ -17,11 +17,19 @@ When a developer is happy that they have everything working in their own
 
 # Documentation
 
-We used Material for MKDocs to manage our documentation which is stored in the `.\docs` folder.  The documentation is stored in the project repo since whenever 
+We used Material for MKDocs to manage our documentation which is stored in the `.\docs` folder.  The documentation is stored in the project repo since we want to ensure that documentation and product stay up to date.
+
+Docs are deployed via Github pages.
 
 # Repository Structure
 
 # Pipelines
 
 Our aim is to practice continuous integration and delivery.
+
+# Environments
+
+We want to be able to create and tear down environments as easy as possible.
+
+We also want to be able to replay Event Bridge events as easy as possible.
 

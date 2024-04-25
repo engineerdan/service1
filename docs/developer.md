@@ -23,6 +23,15 @@ Docs are deployed via Github pages.
 
 # Repository Structure
 
+# Permissions
+
+Permissions S3
+Permissions EventBridge
+
+# EventBridge
+
+`create_eventbridge_rules.bat` will create an Eventbridge rule to write to Cloudwatch logs.
+
 # Pipelines
 
 Our aim is to practice continuous integration and delivery.

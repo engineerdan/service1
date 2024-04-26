@@ -32,6 +32,22 @@ Permissions EventBridge
 
 `create_eventbridge_rules.bat` will create an Eventbridge rule to write to Cloudwatch logs.
 
+# Authentication
+
+Ref: https://www.sammeechward.com/cognito-user-pool-react
+
+Users are authenticated against a Cognito user pool using `amazon-cognito-identity-js`.
+
+## Signup
+
+## Email Confirmation
+
+## Login
+
+## Logout
+
+## Forgot Password
+
 # Pipelines
 
 Our aim is to practice continuous integration and delivery.

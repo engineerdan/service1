@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import { EventBridgeClient, PutEventsCommand } from "@aws-sdk/client-eventbridge"; // ES Modules import
+
 
 function App() {
   return (
@@ -18,7 +20,8 @@ function App() {
           Learn React
         </a>
         <button onClick={() => sendEvent("https://bbc.co.uk")}>Send event!</button>
-        </header>
+        <button onClick={() => putEvent()}>Put event!</button>
+      </header>
     </div>
   );
 }
@@ -26,5 +29,27 @@ function App() {
 const sendEvent = (url) => {
   window.open(url, "_blank", "noreferrer");
 };
+
+// const putEvent = async (
+//     source = "eventbridge.integration.test",
+//     detailType = "greeting",
+//     resources = [],
+// ) => {
+//   const client = new EventBridgeClient({ region: "eu-west-1" });
+//
+//   const response = await client.send(
+//       new PutEventsCommand({
+//         Entries: [
+//           {
+//             Detail: JSON.stringify({greeting: "Hello there."}),
+//             DetailType: detailType,
+//             Resources: resources,
+//             Source: source,
+//           },
+//         ],
+//       }),
+//   );
+//   return response;
+// }
 
 export default App;

@@ -38,6 +38,8 @@ Ref: https://www.sammeechward.com/cognito-user-pool-react
 
 Users are authenticated against a Cognito user pool using `amazon-cognito-identity-js`.
 
+https://docs.aws.amazon.com/cognito/latest/developerguide/getting-credentials.html
+
 ## Signup
 
 ## Email Confirmation

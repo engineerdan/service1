@@ -23,6 +23,14 @@ Docs are deployed via Github pages.
 
 # Repository Structure
 
+# OS independent
+
+Choice whether write script in Bash or Powershell.  Want to use the same tool on any operating system, Linux, MacOS or Windows.  One command to get everything running.
+
+Bash and Powershell will run without installing but will require maintaining two separate scripts.  Python can use one script but will require installing Python. 
+
+Maybe a bash and Powershell entry file that calls a common Python file might be the best option and pass on any arguments.  The Bash and Powershell scripts can ensure Python and any other requirements are installed.
+
 # Permissions
 
 Permissions S3

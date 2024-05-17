@@ -1,4 +1,5 @@
-cd ./terraform/cognito
+write-host "creating cognito resources..."
+cd .\terraform\cognito
 terraform init
 terraform plan
 terraform apply --auto-approve
@@ -16,4 +17,4 @@ $region="eu-west-2"
 ("REACT_APP_COGNITO_ID=cognito-idp." + $region + ".amazonaws.com/" + $user_pool_id) | Out-File $outFile -encoding ASCII -append
 ("REACT_APP_IDENTITY_POOL=" + $identity_pool_id) | Out-File $outFile -encoding ASCII -append
 
-cd ../..
+cd ..\..

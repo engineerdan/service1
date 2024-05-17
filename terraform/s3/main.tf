@@ -1,6 +1,7 @@
 # create the bucket
 resource "aws_s3_bucket" "mapper-frontend" {
     bucket = "mapper-frontend"
+    force_destroy = true
 }
 
 # enable static website hosting on this bucket
@@ -9,6 +10,10 @@ resource "aws_s3_bucket_website_configuration" "hosting" {
 
   index_document {
     suffix = "index.html"
+  }
+
+  error_document {
+    key = "index.html"
   }
 }
 

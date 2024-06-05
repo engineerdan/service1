@@ -5,3 +5,9 @@ theme:
   name: material
   palette:
     primary: black
+  features:
+    - navigation.tabs
+plugins:
+  - blog
+markdown_extensions:
+  - attr_list

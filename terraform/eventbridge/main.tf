@@ -70,7 +70,7 @@ resource "aws_cloudwatch_event_rule" "log" {
 PATTERN
 }
 
-# link rule to log group
+# associate eventbridge rule to the log group
 resource "aws_cloudwatch_event_target" "log_to_cloudwatch" {
   rule      = aws_cloudwatch_event_rule.log.name
   arn       = aws_cloudwatch_log_group.events.arn
